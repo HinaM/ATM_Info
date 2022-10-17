@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./info.css">
+    <link rel="icon" href="./image/star.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/9d0690b173.js" crossorigin="anonymous"></script>
+    <title>TPS</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body{
+            font-family: 'cwTeXYen', 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="model_container14" id="model_container14">
+        <div class="model14" style="width: auto">
+            <div style="margin-bottom: 10px; color: #fcd9ce;">
+                <h1 style="text-align: right; cursor: pointer;" id="close14">
+                    <i class="fa-solid fa-xmark"></i>
+                </h1>
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <img src="./image/44-1.png" alt="" width="250px">
+                <div style="display: flex;flex-direction: column; text-align: left;">
+                    <h2 style="font-size: 30px; color: #cfe2f3;">御手洗 十四</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model_containerh" id="model_containerh">
+        <div class="modelh" style="width: auto">
+            <div style="margin-bottom: 10px; color: #fcd9ce;">
+                <h1 style="text-align: right; cursor: pointer;" id="closeh">
+                    <i class="fa-solid fa-xmark"></i>
+                </h1>
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <img src="./image/33-1.png" alt="" width="250px">
+                <div style="display: flex;flex-direction: column; text-align: left;">
+                    <h2 style="color: #d9d2e9; font-size: 30px;">宮崎 比奈</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model_container" id="model_container">
+        <div class="model">
+            <div style="margin-bottom: 10px; color: #fcd9ce;">
+                <h1 style="text-align: right; cursor: pointer;" id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </h1>
+            </div>
+            <div>
+                <img src="./image/1.png" alt="" id="m_h">
+                <img src="./image/2.png" alt="" id="m_14">
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="list" style="background-color: #fcd9ce; height: 100vh;">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Tune Pansy</a></li>
+                <li><a href="./NIA_info.html">Nubile Asphodel</a></li>
+                <li><a href="./MSK_info.html">Masker</a></li>
+                <li><a href="./SR_info.html">靜理央</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <div style="width: 48%;">
+                <h1 style="color: #fcd9ce;">Tune Pansy</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nostrum error cumque. Iure, minima magnam, impedit voluptas distinctio itaque soluta non quasi inventore molestiae similique nisi laboriosam veritatis vero neque.</p>
+                <button id="open">成員</button>
+            </div>
+            <div style="width: 48%; display: flex; align-items: center; justify-content: center;">
+                <img src="./image/0.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="width:100%; height: 35px ; position: absolute; bottom: 0; background-color: #f8f9fa; text-align: right; display: flex; align-items: center;">
+        <p style="width: 100%; margin-right: 5px;">
+            ART | 奈露
+        </p>
+    </div>
+</body>
+<script>
+    const open=document.getElementById('open');
+    const close=document.getElementById('close');
+    const closeh=document.getElementById('closeh');
+    const close14=document.getElementById('close14');
+    const model_container=document.getElementById('model_container');
+    const model_containerh=document.getElementById('model_containerh');
+    const model_container14=document.getElementById('model_container14');
+    const m_h=document.getElementById('m_h');
+    const m_14=document.getElementById('m_14');
+
+    open.addEventListener('click',()=>{
+        model_container.classList.add('show');
+    });
+    close.addEventListener('click',()=>{
+        model_container.classList.remove('show');
+    });
+    closeh.addEventListener('click',()=>{
+        model_containerh.classList.remove('show');
+    });
+    close14.addEventListener('click',()=>{
+        model_container14.classList.remove('show');
+    });
+
+    m_h.addEventListener('click',()=>{
+        model_container.classList.remove('show');
+        model_containerh.classList.add('show');
+    });
+    m_14.addEventListener('click',()=>{
+        model_container.classList.remove('show');
+        model_container14.classList.add('show');
+    });
+</script>
+</html>
