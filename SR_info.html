@@ -76,9 +76,18 @@
             </div>
         </div>
     </div>
+    <header  id="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./TPS_info.html">Tune Pansy</a></li>
+            <li><a href="./NIA_info.html">Nubile Asphodel</a></li>
+            <li><a href="./MSK_info.html">Masker</a></li>
+            <li><a href="#">靜理央</a></li>
+        </ul>
+    </header>
     <div class="page">
         <div class="listt">
-            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-list" onclick="toggle()" style="color: #333; cursor: pointer; font-size: 25px;" id="dd"></i>
         </div>
         <div class="list" style="background-color: #2b446a;">
             <ul>
@@ -147,5 +156,20 @@
         model_container.classList.remove('show');
         model_container14.classList.add('show');
     });
+
+    const dd=document.getElementById('dd');
+    const menu=document.getElementById('menu');
+    menu.style.maxHeight='0px';
+
+    function toggle(){
+        if (menu.style.maxHeight=='0px'){
+            menu.style.maxHeight='250px';
+            dd.style.color='#ffffff';
+        }else{
+            menu.style.maxHeight='0px';
+            dd.style.color='#2b446a';
+
+        }
+    }
 </script>
 </html>

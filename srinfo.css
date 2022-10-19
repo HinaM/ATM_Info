@@ -170,14 +170,36 @@ body .info .imgg{
     align-items: center;
     justify-content: center;
 }
-
+body .page .info .imgg .for_m{
+    display: none;
+}
+header{
+    display: none;
+    width: 100%;
+    background-color: #2b446a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header ul li{
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
 @media only screen and (max-width:700px){
     body .page .list{
-        width: 100%;
-        height: 45vh;
-        position: absolute;
-        top: 0;
-        display: flex;
+        display: none;
     }
     body .page .listt{
         display: block !important;
@@ -200,5 +222,9 @@ body .info .imgg{
     }
     body .info .for_pc{
         display:none;
+    }
+    #menu{
+        overflow: hidden;
+        transition: 0.5s;
     }
 }
