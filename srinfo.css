@@ -12,6 +12,7 @@ body .page{
 }
 body .page .list{
     width: 17%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,4 +151,54 @@ body .model_container14 .model14 i{
 }
 body .model_container14 .model14 i:hover{
     transform: rotate(180deg);
+}
+
+body .page .listt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    display: none;
+    z-index: 100;
+}
+body .info .fontt{
+    width: 48%;
+}
+body .info .imgg{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:700px){
+    body .page .list{
+        width: 100%;
+        height: 45vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+    }
+    body .page .listt{
+        display: block !important;
+    }
+    body .page .info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    body .page .info .fontt{
+        width: 100%;
+    }
+    body .page .info .imgg{
+        width: 100%;
+    }
+    body .page .info .imgg .for_m{
+        display:block !important;
+    }
+    body .page .info .imgg .for_m img{
+        width: 100%;
+    }
+    body .info .for_pc{
+        display:none;
+    }
 }
