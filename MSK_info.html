@@ -17,6 +17,15 @@
     </style>
 </head>
 <body>
+    <header  id="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./TPS_info.html">Tune Pansy</a></li>
+            <li><a href="./NIA_info.html">Nubile Asphodel</a></li>
+            <li><a href="./MSK_info.html">Masker</a></li>
+            <li><a href="#">靜理央</a></li>
+        </ul>
+    </header>
     <div class="model_container14" id="model_container14">
         <div class="model14" style="width: 50%;">
             <div style="margin-bottom: 10px; color: #a29398;">
@@ -71,6 +80,9 @@
         </div>
     </div>
     <div class="page">
+        <div class="listt">
+            <i class="fa-solid fa-list" onclick="toggle()" style="color: #a29398; cursor: pointer; font-size: 25px;" id="dd"></i>
+        </div>
         <div class="list" style="background-color: #a29398; height: 100vh;">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -81,13 +93,19 @@
             </ul>
         </div>
         <div class="info">
-            <div style="width: 48%;">
+            <div class="fontt">
                 <h1 style="color: #a29398;">Masker</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid nostrum error cumque. Iure, minima magnam, impedit voluptas distinctio itaque soluta non quasi inventore molestiae similique nisi laboriosam veritatis vero neque.</p>
-                <button id="open">成員介紹</button>
+                <button id="open" class="bpc">成員介紹</button>
+                <button class="bm" onclick="error();">成員介紹</button>
             </div>
-            <div style="width: 48%; display: flex; align-items: center; justify-content: center;">
-                <img src="./image/000.png" alt="">
+            <div class="imgg">
+                <div class="for_pc">
+                    <img src="./image/000.png" alt="">
+                </div>
+                <div class="for_m">
+                    <img src="./image/MSK.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -130,5 +148,24 @@
         model_container.classList.remove('show');
         model_container14.classList.add('show');
     });
+
+    const dd=document.getElementById('dd');
+    const menu=document.getElementById('menu');
+    menu.style.maxHeight='0px';
+
+    function toggle(){
+        if (menu.style.maxHeight=='0px'){
+            menu.style.maxHeight='250px';
+            dd.style.color='#ffffff';
+        }else{
+            menu.style.maxHeight='0px';
+            dd.style.color='#6f121f';
+
+        }
+    }
+
+    function error(){
+        alert('技術問題故手機功能未開放。');
+    }
 </script>
 </html>

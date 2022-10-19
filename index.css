@@ -6,8 +6,7 @@
 body .GOGO{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(./image/TPS.png);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     background-position: center;
     display: flex;
     align-items: center;

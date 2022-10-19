@@ -87,7 +87,7 @@
     </header>
     <div class="page">
         <div class="listt">
-            <i class="fa-solid fa-list" onclick="toggle()" style="color: #333; cursor: pointer; font-size: 25px;" id="dd"></i>
+            <i class="fa-solid fa-list" onclick="toggle()" style="color: #2b446a; cursor: pointer; font-size: 25px;" id="dd"></i>
         </div>
         <div class="list" style="background-color: #2b446a;">
             <ul>
@@ -103,7 +103,7 @@
                 <h1 style="color: #2b446a;">靜理央</h1>
                 <p>Masker創辦人。畢業將Masker交給拾肆後，兩人以新團體名義進行活動。以團隊高契合度為亮點。</p>
                 <button id="open" class="bpc">成員介紹</button>
-                <button class="bm">成員介紹</button>
+                <button class="bm" onclick="error();">成員介紹</button>
             </div>
             <div class="imgg">
                 <div class="for_pc">
@@ -112,7 +112,6 @@
                 <div class="for_m">
                     <img src="./image/50.png">
                 </div>
-                
             </div>
         </div>
     </div>
@@ -169,6 +168,10 @@
             dd.style.color='#2b446a';
 
         }
+    }
+
+    function error(){
+        alert('技術問題故手機功能未開放。');
     }
 </script>
 </html>

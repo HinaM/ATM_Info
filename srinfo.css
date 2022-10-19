@@ -236,4 +236,7 @@ header ul li a{
     body .page .info .bpc{
         display: none;
     }
+    body .page .info .fontt h1{
+        margin-top: 10px;
+    }
 }

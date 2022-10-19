@@ -17,6 +17,15 @@
     </style>
 </head>
 <body>
+    <header  id="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./TPS_info.html">Tune Pansy</a></li>
+            <li><a href="./NIA_info.html">Nubile Asphodel</a></li>
+            <li><a href="./MSK_info.html">Masker</a></li>
+            <li><a href="#">靜理央</a></li>
+        </ul>
+    </header>
     <div class="model_container14" id="model_container14">
         <div class="model14" style="width: 50%;">
             <div style="margin-bottom: 10px; color: #6f121f;">
@@ -71,6 +80,9 @@
         </div>
     </div>
     <div class="page">
+        <div class="listt">
+            <i class="fa-solid fa-list" onclick="toggle()" style="color: #6f121f; cursor: pointer; font-size: 25px;" id="dd"></i>
+        </div>
         <div class="list" style="background-color: #6f121f; height: 100vh;">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -81,13 +93,19 @@
             </ul>
         </div>
         <div class="info">
-            <div style="width: 48%;">
+            <div class="fontt">
                 <h1 style="color: #6f121f;">Nubile Asphodel</h1>
                 <p>以強勢、神秘的表演風格為主。團體個人風格強烈，兩人甚至會再台上莫名其妙對槓起來。粉絲福利給的較極端，客群較少一點但也更忠心。</p>
-                <button id="open">成員介紹</button>
+                <button id="open" class="bpc">成員介紹</button>
+                <button class="bm" onclick="error();">成員介紹</button>
             </div>
-            <div style="width: 48%; display: flex; align-items: center; justify-content: center;">
-                <img src="./image/00.png" alt="">
+            <div class="imgg">
+                <div class="for_pc">
+                    <img src="./image/00.png" alt="">
+                </div>
+                <div class="for_m">
+                    <img src="./image/NIA.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -130,5 +148,24 @@
         model_container.classList.remove('show');
         model_container14.classList.add('show');
     });
+
+    const dd=document.getElementById('dd');
+    const menu=document.getElementById('menu');
+    menu.style.maxHeight='0px';
+
+    function toggle(){
+        if (menu.style.maxHeight=='0px'){
+            menu.style.maxHeight='250px';
+            dd.style.color='#ffffff';
+        }else{
+            menu.style.maxHeight='0px';
+            dd.style.color='#6f121f';
+
+        }
+    }
+
+    function error(){
+        alert('技術問題故手機功能未開放。');
+    }
 </script>
 </html>
