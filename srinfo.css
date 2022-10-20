@@ -98,6 +98,7 @@ body .model_container .model img:hover{
 }
 
 body .model_containerh{
+    overflow: scroll;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -115,11 +116,15 @@ body .model_containerh.show{
     pointer-events: auto;
 }
 body .model_containerh .modelh{
+    width: 50%;
     background-color: #ffffff;
-    width: auto;
     padding: 30px;
     border-radius: 5px;
     text-align: center;
+}
+body .model_containerh .modelh .ch{
+    display: flex;
+    flex-direction: row;
 }
 body .model_containerh .modelh i{
     transition: transform .3s;
@@ -259,5 +264,18 @@ header ul li a{
     }
     body .model_container14 .model14 .c141 img{
         margin-top: 15px;
+        width: auto;
+    }
+    body .model_containerh .modelh{
+        width: 80%;
+        position: absolute;
+        top: 50px;
+    }
+    body .model_containerh .modelh .ch{
+        flex-direction: column-reverse;
+    }
+    body .model_containerh .modelh .ch img{
+        margin-top: 15px;
+        width: auto;
     }
 }
