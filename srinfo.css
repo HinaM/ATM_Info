@@ -278,4 +278,7 @@ header ul li a{
         margin-top: 15px;
         width: auto;
     }
+    body .model_container .model img{
+        filter: grayscale(0%);
+    }
 }
