@@ -67,6 +67,7 @@ body .model_container{
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 101;
 }
 body .model_container.show{
     opacity: 1;
@@ -110,6 +111,7 @@ body .model_containerh{
 body .model_containerh.show{
     opacity: 1;
     pointer-events: auto;
+    z-index: 101;
 }
 body .model_containerh .modelh{
     width: 50%;
@@ -142,10 +144,12 @@ body .model_container14{
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 101;
 }
 body .model_container14.show{
     opacity: 1;
     pointer-events: auto;
+    z-index: 101;
 }
 body .model_container14 .model14{
     background-color: #ffffff;
@@ -260,9 +264,9 @@ body .page .listt{
         margin-top: 10px;
     }
     body .model_container14 .model14{
-        width: 80%;
+        width: 100%;
         position: absolute;
-        top: 50px;
+        top: 0px;
     }
     body .model_container14 .model14 .c141{
         flex-direction: column-reverse;
@@ -272,9 +276,9 @@ body .page .listt{
         width: auto;
     }
     body .model_containerh .modelh{
-        width: 80%;
+        width: 100%;
         position: absolute;
-        top: 50px;
+        top: 0px;
     }
     body .model_containerh .modelh .ch{
         flex-direction: column-reverse;

@@ -110,6 +110,7 @@ body .model_containerh{
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 101;
 }
 body .model_containerh.show{
     opacity: 1;
@@ -146,6 +147,7 @@ body .model_container14{
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 101;
 }
 body .model_container14.show{
     opacity: 1;
@@ -255,9 +257,9 @@ header ul li a{
         margin-top: 10px;
     }
     body .model_container14 .model14{
-        width: 80%;
+        width: 100%;
         position: absolute;
-        top: 50px;
+        top: 0px;
     }
     body .model_container14 .model14 .c141{
         flex-direction: column-reverse;
@@ -267,9 +269,9 @@ header ul li a{
         width: auto;
     }
     body .model_containerh .modelh{
-        width: 80%;
+        width: 100%;
         position: absolute;
-        top: 50px;
+        top: 0px;
     }
     body .model_containerh .modelh .ch{
         flex-direction: column-reverse;
