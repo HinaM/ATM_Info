@@ -32,3 +32,42 @@ body .GOGO button:hover{
     border: 2px #a18080 solid;
     color: #a18080;
 }
+body .card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body .card .cardd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+body .card .cardd button{
+    outline: none;
+    width: 120px;
+    height: 35px;
+    border: 0;
+    background: #a18080;
+    color: #ffffff;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+body .card .cardd button:disabled{
+    outline: none;
+    width: 120px;
+    height: 35px;
+    border: 0;
+    background: #a39a9a;
+    color: #ffffff;
+    border-radius: 2rem;
+    cursor: not-allowed;;
+}
+@media only screen and (max-width:700px){
+    body .card{
+        flex-direction: column;
+    }
+}
