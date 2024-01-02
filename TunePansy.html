@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="icon" href="./image/star.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/9d0690b173.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Tune Pansy</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body{
+            font-family: 'cwTeXYen', 'Lato', sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+
+    <div class="page">
+        <div class="listt" id="listt">
+            <i class="fa-solid fa-list" style="color: #fcd9ce;" id="fafa"></i>
+        </div>
+        <div id="header_bg">
+            <header id="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./TPS_info.html">Tune Pansy</a></li>
+                    <li><a href="./NIA_info.html">Nubile Asphodel</a></li>
+                    <li><a href="./MSK_info.html">Masker</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="info">
+            
+        </div>
+        <!--
+        <footer>
+            <p style="width: 100%; margin-right: 5px;">
+                BACKGROUND | <a href="https://www.pixiv.net/users/42601023" style="color: #333; text-decoration: none;">山田野郎</a>、
+                ART | 奈露
+            </p>
+        </footer>
+        -->
+    </div>
+    
+    
+</body>
+<script>
+    $("#listt").click(
+        function(){
+            var header_bg = document.getElementById("header_bg");
+            var menu = document.getElementById("menu");
+            var fafa = document.getElementById("fafa");
+            if (menu.style.left == ""){
+                $("#menu").css("left","0");
+                $("#fafa").css("color","#fff");
+                $("#header_bg").css("background-color","rgba(0,0,0,0.1)");
+            }else if(menu.style.left == "0px"){
+                $("#menu").css("left","-100%");
+                $("#fafa").css("color","#fcd9ce");
+                $("#header_bg").css("background-color","transparent");
+            }else{
+                $("#menu").css("left","0");
+                $("#fafa").css("color","#fff");
+                $("#header_bg").css("background-color","rgba(0,0,0,0.1)");
+            }
+        }
+    );
+</script>
+</html>
