@@ -4,13 +4,28 @@
     box-sizing: border-box;
     position: relative;
 }
+
 .page{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
+.page .bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url(../image/TPS-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
 .page .listt{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 100;
     top: 15px;
@@ -24,12 +39,61 @@
 .page .listt:hover{
     background-color: #ebebeb;
 }
+.page .info{
+    width: 90vw;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.page .info .font{
+    width: 40%;
+    
+    flex-direction: column;
+}
+.page .info .font h3{
+    
+    font-weight: normal;
+}
+.page .info .block{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.page .info .block .blocks{
+    height: 70vh;
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 15px;
+    filter: grayscale(80%);
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+.page .info .block .blocks:hover{
+    filter: grayscale(0%);
+    border: 5px solid #fcd9ce;
+}
+.page .info .block img{
+    height: 80vh;
+}
 #header_bg{
     transition: 0.3s;
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: transparent;
+    z-index: -100;
+    /*background-color: transparent;*/
 }
 #menu{
     transition: 0.5s;

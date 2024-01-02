@@ -24,8 +24,27 @@
 
 
     <div class="page">
+        <div class="bg"></div>
         <div class="listt" id="listt">
             <i class="fa-solid fa-list" style="color: #fcd9ce;" id="fafa"></i>
+        </div>
+        <div class="info">
+            
+            <div class="font">
+                <h1 style="color: #fcd9ce; margin-bottom: 15px;">Tune Pansy</h1>
+                <h3>宮崎比奈及御手洗十四組成的團體，以清脆、空靈、精靈般的表演風格為主。團體內部關係融洽，沒有特別貼給別人看，但就是很貼。兩人貼貼就是粉絲福利了。</h3>
+                <button>213</button>
+            </div>
+            <div class="block">
+                <div class="blocks hina">
+                    <img src="./image/33-1.png" alt="">
+                </div>
+                <div class="blocks 14">
+                    <img src="./image/44-1.png" alt="">
+                </div>
+                
+            </div>
+            
         </div>
         <div id="header_bg">
             <header id="menu">
@@ -37,9 +56,7 @@
                 </ul>
             </header>
         </div>
-        <div class="info">
-            
-        </div>
+        
         <!--
         <footer>
             <p style="width: 100%; margin-right: 5px;">
@@ -61,15 +78,21 @@
             if (menu.style.left == ""){
                 $("#menu").css("left","0");
                 $("#fafa").css("color","#fff");
-                $("#header_bg").css("background-color","rgba(0,0,0,0.1)");
+                $("#header_bg").css("background-color","rgba(0,0,0,0.2)");
+                $("#header_bg").css("z-index","10");
+                
             }else if(menu.style.left == "0px"){
                 $("#menu").css("left","-100%");
                 $("#fafa").css("color","#fcd9ce");
+                $("#header_bg").css("z-index","-100");
                 $("#header_bg").css("background-color","transparent");
+                
             }else{
                 $("#menu").css("left","0");
                 $("#fafa").css("color","#fff");
-                $("#header_bg").css("background-color","rgba(0,0,0,0.1)");
+                $("#header_bg").css("z-index","10");
+                $("#header_bg").css("background-color","rgba(0,0,0,0.2)");
+                
             }
         }
     );
