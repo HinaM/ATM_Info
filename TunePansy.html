@@ -35,7 +35,7 @@
                 <h3>宮崎比奈及御手洗十四組成的團體，以清脆、空靈、精靈般的表演風格為主。團體內部關係融洽，沒有特別貼給別人看，但就是很貼。兩人貼貼就是粉絲福利了。</h3>
             </div>
             <div class="block">
-                <div class="blocks hina">
+                <div class="blocks hina" id="hina">
                     <img src="./image/33-1.png" alt="">
                     <div class="fontt">
                         <p class="name">宮崎 比奈</p>
@@ -124,6 +124,16 @@
                 $("#header_bg").css("background-color","rgba(0,0,0,0.2)");
                 
             }
+        }
+    );
+    $("#closeh").click(
+        function () {
+            $("#con_h").css("display","none");
+        }
+    );
+    $("#hina").click(
+        function () {
+            $("#con_h").css("display","flex");
         }
     );
 </script>
