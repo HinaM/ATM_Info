@@ -31,8 +31,8 @@
         <div class="info">
             
             <div class="font">
-                <h1 style="color: #fcd9ce; margin-bottom: 15px;">Tune Pansy</h1>
-                <h3>宮崎比奈及御手洗十四組成的團體，以清脆、空靈、精靈般的表演風格為主。團體內部關係融洽，沒有特別貼給別人看，但就是很貼。兩人貼貼就是粉絲福利了。</h3>
+                <h1>Tune Pansy</h1>
+                <h3>宮崎比奈帶領的團體，</h3>
             </div>
             <div class="block">
                 <div class="blocks hina" id="hina">
@@ -42,7 +42,7 @@
                         <p>Miyazaki Hina</p>
                     </div>
                 </div>
-                <div class="blocks yo">
+                <div class="blocks yo" id="jyu">
                     <img src="./image/44-1.png" alt="">
                     <div class="fontt">
                         <p class="name">御手洗 十四</p>
@@ -75,21 +75,40 @@
         </footer>
         -->
     
+        
+
         <div id="con_h">
-            <div class="con_in">
-                <div class="head">
-                    <i class="fa-solid fa-xmark" id="closeh" style="cursor: pointer;color: #dad2e9;"></i>
+            <div class="con_in hi">
+                
+                <div class="head" id="closeh">
+                    <i class="fa-solid fa-xmark"  style="cursor: pointer;color: #dad2e9;"></i>
                 </div>
-                <div class="body">
-                    <img src="./image/33-1.png" alt="">
-                    <div class="fon">
-                        <h2 style="color: #d9d2e9; font-size: 30px; margin-bottom: 10px;">宮崎 比奈</h2>
-                        <p>年齡：17（高二）</p>
-                        <p>身高：154</p>
-                        <p>
-                            宮崎雛的雙胞胎姐姐，與白十四是情侶。能傾聽他人的煩惱並給予建議，對其他人是溫柔可靠的姐姐。平常不怎麼生氣，但真的生氣起來很可怕。能清晰地分析現狀和指派工作，是團體方向的策畫者。
-                        </p>
-                    </div>
+                <img src="./image/33-1.png" alt="">
+                <div class="info">
+                    <h2 style="color: #d9d2e9; font-size: 45px; margin-bottom: 0; font-weight: bolder;">宮崎 比奈</h2>
+                    <h3 style="color: #d9d2e9;margin-bottom: 10px; font-size: 20px;">Miyazaki Hina</h3>
+                    <p>年齡：17（高二）</p>
+                    <p>身高：154</p>
+                    <p>代表色：<i class="fa-solid fa-square" style="color: #d9d2e9;"></i> #d9d2e9</p>
+                    <p style="text-align: left;">雛的雙胞胎姐姐，與同一個團體的十四是情侶。能傾聽他人的煩惱並給予建議，對其他人是溫柔可靠的姐姐。平常不怎麼生氣，但真的生氣起來很可怕。表演風格端莊而優雅，且能清晰地分析現狀和指派工作，是團體方向的策畫者。</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="con_jyu">
+            <div class="con_in yo">
+                
+                <div class="head" id="closejyu">
+                    <i class="fa-solid fa-xmark"  style="cursor: pointer;color: #cfe2f3;"></i>
+                </div>
+                <img src="./image/44-1.png" alt="">
+                <div class="info">
+                    <h2 style="color: #cfe2f3; font-size: 45px; margin-bottom: 0; font-weight: bolder;">御手洗 十四</h2>
+                    <h3 style="color: #cfe2f3;margin-bottom: 10px; font-size: 20px;">Mitarai Jyuushi</h3>
+                    <p>年齡：17（高二）</p>
+                    <p>身高：152</p>
+                    <p>代表色：<i class="fa-solid fa-square" style="color: #cfe2f3;"></i> #cfe2f3</p>
+                    <p style="text-align: left;">黑十四的雙胞胎姐姐，與比奈是情侶。情緒起伏不大，面對觸及原則的事情溫柔但不妥協。對他人不熱情但友善，忠心誠懇、以重要他人為生活重心。</p>
                 </div>
             </div>
         </div>
@@ -126,6 +145,8 @@
             }
         }
     );
+
+    
     $("#closeh").click(
         function () {
             $("#con_h").css("display","none");
@@ -136,5 +157,17 @@
             $("#con_h").css("display","flex");
         }
     );
+
+    $("#closejyu").click(
+        function () {
+            $("#con_jyu").css("display","none");
+        }
+    );
+    $("#jyu").click(
+        function () {
+            $("#con_jyu").css("display","flex");
+        }
+    );
+    
 </script>
 </html>
