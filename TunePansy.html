@@ -28,11 +28,15 @@
         <div class="listt" id="listt">
             <i class="fa-solid fa-list" style="color: #fcd9ce;" id="fafa"></i>
         </div>
+        <div class="btns">
+            <i class="fa-solid fa-share-nodes" onclick="copyUrl();"></i>
+        </div>
         <div class="info">
             
             <div class="font">
-                <h1>Tune Pansy</h1>
-                <h3>宮崎比奈帶領的團體，</h3>
+                <h1 style="-webkit-text-fill-color: transparent;-webkit-text-stroke: 1px;" >Tune Pansy</h1>
+                <h3>宮崎比奈帶領的優雅團體，以乾淨清脆、空靈，如同精靈的風格為主。團體氣氛融洽，兩人高配合度的共鳴交織成一篇篇和諧的樂章。
+                </h3>
             </div>
             <div class="block">
                 <div class="blocks hina" id="hina">
@@ -79,7 +83,6 @@
 
         <div id="con_h">
             <div class="con_in hi">
-                
                 <div class="head" id="closeh">
                     <i class="fa-solid fa-xmark"  style="cursor: pointer;color: #dad2e9;"></i>
                 </div>
@@ -88,7 +91,7 @@
                     <h2 style="color: #d9d2e9; font-size: 45px; margin-bottom: 0; font-weight: bolder;">宮崎 比奈</h2>
                     <h3 style="color: #d9d2e9;margin-bottom: 10px; font-size: 20px;">Miyazaki Hina</h3>
                     <p>年齡：17（高二）</p>
-                    <p>身高：154</p>
+                    <p style="cursor: pointer;" onclick="copyUrl();">身高：154</p>
                     <p>代表色：<i class="fa-solid fa-square" style="color: #d9d2e9;"></i> #d9d2e9</p>
                     <p style="text-align: left;">雛的雙胞胎姐姐，與同一個團體的十四是情侶。能傾聽他人的煩惱並給予建議，對其他人是溫柔可靠的姐姐。平常不怎麼生氣，但真的生氣起來很可怕。表演風格端莊而優雅，且能清晰地分析現狀和指派工作，是團體方向的策畫者。</p>
                 </div>
@@ -169,5 +172,17 @@
         }
     );
     
+
+    function copyUrl() {
+        var Url = window.location.href;
+        var oInput = document.createElement('input');
+        oInput.value = Url;
+        document.body.appendChild(oInput);
+        oInput.select();
+        document.execCommand("Copy");
+        oInput.className = "oInput";
+        oInput.style.display='none';
+        alert("複製成功！");
+    }
 </script>
 </html>
