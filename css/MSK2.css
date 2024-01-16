@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'cwTeXYen', 'Lato', sans-serif;
+}
+*::selection{
+    background: #ADADAD;
+	color: #fff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#preload{
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+.contain{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contain .page_c{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(../image/101238427_p28_master1200.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    backdrop-filter: blur(0.5);
+}
+.contain .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #191a1b;
+    opacity: 0.95;
+    z-index: 100;
+}
+.contain .page_c .logo{
+    position: absolute;
+    background-color: #191a1b;
+    width: 13%;
+    left: 3%;
+    padding: 5px 5px;
+}
+.contain .page_c .logo a{
+    cursor: pointer;
+}
+.contain .page_c .logo a img{
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+    filter: brightness(0.6);
+    transition: 0.5s;
+}
+
+.contain .page_c .logo a img.cen{
+    filter: brightness(1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contain .page_c .logo a:hover img{
+    filter: brightness(1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.contain .page_c .members{
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain .page_c .members .block{
+    width: 14%;
+    height: 100%;
+    margin: 0 10px;
+    background: linear-gradient(#2b446a,rgba(255,255,255,0));
+    border: 5px solid #2b446a;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(0.8);
+}
+.contain .page_c .members .block:hover{
+    filter: grayscale(0);
+}
+.contain .page_c .members .block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.contain .page_c .members .block .name{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+}
+.contain .page_c .members .block:hover .name{
+    opacity: 1;
+}
+.contain .page_c .about_unit{
+    position: absolute;
+    background-color: #f3f3f3;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px solid #2b446a;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#unit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#unit_close{
+    margin-bottom: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;    
+}
+#unit_close i{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 25px;
+    border: #2b446a 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2b446a;
+    background-color: rgba(255,255,255,0.5);
+}
+#unit .con{
+    border: 5px dashed #2b446a;
+    width: 60%;
+    height: 30%;
+    background-color: #f3f3f3;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#unit .con .fon{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#unit .con .img{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+#unit .con .img img{
+    width: 100%;
+    object-fit: contain;
+}

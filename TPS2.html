@@ -6,6 +6,7 @@
     <title>Tune Pansy</title>
     <link rel="stylesheet" href="./css/TPS2.css">
     <script src="https://kit.fontawesome.com/9d0690b173.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="contain">
@@ -38,16 +39,43 @@
         <a href="#">
           <img src="./image/logo (1).png" alt="">
         </a>
-        <a href="#">
+        <a href="MSK2.html">
           <img src="./image/logo (3).png" alt="">
         </a>
       </div>
 
-      <div class="about_unit">
+      <div class="about_unit" id="about_unit">
         <p>UNIT<br>Info <i class="fa-solid fa-up-right-from-square"></i></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="unit">
+    <div id="unit_close"><i class="fa-solid fa-xmark"></i></div>
+    <div class="con">
+      <div class="fon">
+        <p style="font-weight: 600; font-size: 18px; margin-bottom: 15px;">三色堇的和諧旋律</p>
+        <p>宮崎比奈帶領的優雅團體，以乾淨清脆、空靈，如同精靈的風格為主。團體氣氛融洽，兩人高配合度的共鳴交織成一篇篇和諧的樂章。</p>
+      </div>
+      <div class="img">
+        <img src="./image/TPS.png" alt="">
       </div>
     </div>
   </div>
     
 </body>
+<script>
+  
+  $("#about_unit").click(
+    function(){
+      $("#unit").css("display","flex");
+    }
+  );
+  $("#unit_close").click(
+    function(){
+      $("#unit").css("display","none");
+    }
+  );
+
+</script>
 </html>

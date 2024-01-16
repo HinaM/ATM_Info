@@ -30,7 +30,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-image: url(../image/TPS-bg.jpg);
+    background-image: url(../image/101565806_p3_master1200.png);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -90,6 +90,12 @@ body{
     margin: 0 10px;
     background: linear-gradient(#fcd9ce,rgba(255,255,255,0));
     border: 5px solid #f5d4ca;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(0.8);
+}
+.contain .page_c .members .block:hover{
+    filter: grayscale(0);
 }
 .contain .page_c .members .block img{
     width: 100%;
@@ -107,6 +113,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+}
+.contain .page_c .members .block:hover .name{
+    opacity: 1;
 }
 .contain .page_c .about_unit{
     position: absolute;
@@ -122,4 +133,63 @@ body{
     text-align: center;
     cursor: pointer;
     font-size: 12px;
+}
+
+#unit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#unit_close{
+    margin-bottom: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;    
+}
+#unit_close i{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 25px;
+    border: #f5d4ca 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5d4ca;
+    background-color: rgba(255,255,255,0.5);
+}
+#unit .con{
+    border: 5px dashed #f5d4ca;
+    width: 60%;
+    height: 30%;
+    background-color: #f3f3f3;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#unit .con .fon{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#unit .con .img{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+#unit .con .img img{
+    width: 100%;
+    object-fit: contain;
 }
