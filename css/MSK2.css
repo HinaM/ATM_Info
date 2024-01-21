@@ -188,7 +188,31 @@ body{
     cursor: pointer;
     font-size: 12px;
 }
+.contain .page_m{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    
+    flex-direction: column;
+}
+.contain .page_m .title{
+    margin-top: 60px;
+    width: 100%;
+    padding: 25px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #f3f3f3;  
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.contain .page_m img{
+    width: 100%;
+    object-fit: cover;
+}
 #unit{
     position: absolute;
     width: 100%;
@@ -246,4 +270,13 @@ body{
 #unit .con .img img{
     width: 100%;
     object-fit: contain;
+}
+@media only screen and (max-width:1000px){
+    .contain .page_c{
+        display: none;
+    }
+    .contain .page_m{
+        display: flex;
+    }
+    
 }
