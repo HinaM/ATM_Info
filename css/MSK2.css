@@ -208,7 +208,9 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.contain .page_m .title .ti{
+    -webkit-text-fill-color: #f3f3f3;
+}
 .contain .page_m img{
     width: 100%;
     object-fit: cover;
