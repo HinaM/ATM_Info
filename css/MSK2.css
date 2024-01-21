@@ -191,7 +191,6 @@ body{
 .contain .page_m{
     display: none;
     width: 100vw;
-    min-height: 100vh;
     background-color: #333;
     display: flex;
     
