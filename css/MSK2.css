@@ -192,7 +192,7 @@ body{
     display: none;
     width: 100vw;
     background-color: #333;
-    display: flex;
+    /*display: flex;*/
     
     flex-direction: column;
 }
@@ -202,7 +202,7 @@ body{
     padding: 25px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f3f3f3;  
-    font-size: 35px;
+    font-size: 6vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,6 +213,33 @@ body{
 .contain .page_m img{
     width: 100%;
     object-fit: cover;
+}
+.contain .page_m .unitinfo{
+    background-color: #f3f3f3;
+    padding: 30px 25px;
+}
+.contain .page_m .unitinfo img{
+    width: 30%;
+}
+.contain .page_m .unitinfo h2{
+    font-size: 4vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contain .page_m .unitinfo p{
+    font-size: 3vw;
+}
+.contain .page_m .mems{
+    background-color: #333;
+
+}
+.contain .page_m .mems .title{
+    -we-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #f3f3f3;
+    margin-top: 0;
+    font-size: 6vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 #unit{
     position: absolute;
