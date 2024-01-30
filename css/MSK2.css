@@ -146,7 +146,6 @@ body{
 }
 .contain .page_c .members .block:hover{
     filter: grayscale(0);
-    
 }
 .contain .page_c .members .block img{
     width: 100%;
@@ -252,6 +251,15 @@ body{
     border: #2b446a 1px solid;
     margin: 15px 20px;
     cursor: pointer;
+}
+.contain .page_m .mems .others_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    font-weight: bolder;
+    color: #f3f3f3;
+    font-size: 6vw;
 }
 #unit{
     position: absolute;
