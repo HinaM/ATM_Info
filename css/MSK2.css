@@ -81,13 +81,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     background-image: url(../image/101238427_p28_master1200.png);
     background-repeat: no-repeat;
     background-size: cover;
     
     backdrop-filter: blur(0.5);
 }
+
 .contain .navbar{
     position: fixed;
     top: 0;
@@ -124,10 +124,6 @@ body{
 
 .contain .page_c .logo a:hover img{
     filter: brightness(1);
-    /*
-    margin-top: 10px;
-    margin-bottom: 10px;
-    */
     margin-left: 20px;
 }
 .contain .page_c .members{
@@ -190,16 +186,13 @@ body{
 }
 .contain .page_m{
     display: none;
-    width: 100vw;
+    width: 100%;
     background-color: #333;
-    /*display: flex;*/
-    
     flex-direction: column;
 }
 .contain .page_m .title{
-    margin-top: 60px;
+    margin: 85px 0 25px 0;
     width: 100%;
-    padding: 25px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f3f3f3;  
     font-size: 6vw;
@@ -214,32 +207,50 @@ body{
     width: 100%;
     object-fit: cover;
 }
-.contain .page_m .unitinfo{
+.contain .page_m .all_info{
+    width: 100%;
     background-color: #f3f3f3;
-    padding: 30px 25px;
+    padding: 25px 30px;
 }
-.contain .page_m .unitinfo img{
+.contain .page_m .all_info img{
     width: 30%;
+    margin-bottom: 15px;
 }
-.contain .page_m .unitinfo h2{
-    font-size: 4vw;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.contain .page_m .all_info h2{
+    font-size: 4.5vw;
+    margin-bottom: 5px;
 }
-.contain .page_m .unitinfo p{
-    font-size: 3vw;
+.contain .page_m .all_info p{
+    font-size: 2.5vw;
 }
 .contain .page_m .mems{
+    width: 100%;
     background-color: #333;
 
 }
-.contain .page_m .mems .title{
-    -we-webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #f3f3f3;
-    margin-top: 0;
+.contain .page_m .mems .mems_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #f3f3f3;  
     font-size: 6vw;
-    padding-top: 40px;
-    padding-bottom: 40px;
+}
+.contain .page_m .mems .img_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain .page_m .mems .img_block.bot{
+    margin-bottom: 50px;
+}
+.contain .page_m .mems .img_block .block{
+    width: 35vw;
+    height: 35vw;
+    border: #2b446a 1px solid;
+    margin: 15px 20px;
+    cursor: pointer;
 }
 #unit{
     position: absolute;
