@@ -146,6 +146,7 @@ body{
 }
 .contain .page_c .members .block:hover{
     filter: grayscale(0);
+    
 }
 .contain .page_c .members .block img{
     width: 100%;
