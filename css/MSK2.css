@@ -96,6 +96,13 @@ body{
     background-color: #191a1b;
     opacity: 0.95;
     z-index: 100;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #f3f3f3;
+}
+.contain .navbar a{
+    color: #f3f3f3;
 }
 .contain .page_c .logo{
     position: absolute;
@@ -248,9 +255,17 @@ body{
 .contain .page_m .mems .img_block .block{
     width: 35vw;
     height: 35vw;
-    border: #2b446a 1px solid;
+    border: #f3c86c 2px solid;
     margin: 15px 20px;
     cursor: pointer;
+}
+.contain .page_m .mems .img_block .block.logo{
+    width: 35vw;
+    height: fit-content;
+    border: none;
+    margin: 15px 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 .contain .page_m .mems .others_title{
     display: flex;
