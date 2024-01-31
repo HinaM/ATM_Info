@@ -224,12 +224,10 @@ body{
     margin-bottom: 15px;
 }
 .contain .page_m .all_info h2{
-    font-size: 4.5vw;
+    
     margin-bottom: 5px;
 }
-.contain .page_m .all_info p{
-    font-size: 3vw;
-}
+
 .contain .page_m .mems{
     width: 100%;
     background-color: #333;
