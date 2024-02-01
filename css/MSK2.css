@@ -202,7 +202,7 @@ body{
     width: 100%;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f3f3f3;  
-    font-size: 6vw;
+    font-size: 8vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +240,7 @@ body{
     padding: 25px 0;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f3f3f3;  
-    font-size: 6vw;
+    font-size: 8vw;
 }
 .contain .page_m .mems .img_block{
     display: flex;
@@ -272,7 +272,7 @@ body{
     padding: 25px 0;
     font-weight: bolder;
     color: #f3f3f3;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 .contain .page_m footer{
     width: 100%;
